@@ -9,7 +9,6 @@ class FibonacciSubmit extends React.Component {
     }
 
     this.handleClick = this.handleClick.bind(this);
-    
   }
 
   calculateFibonacci (index) {
@@ -61,7 +60,8 @@ class FibonacciSubmit extends React.Component {
 
   handleClick () {
     let index = parseInt(this.props.index);
-    console.log(this.calculateFibonacci(index));
+    let calculatedFib = this.calculateFibonacci(index);
+    this.props.onSetLastFib(calculatedFib);
   }
 
   render() {
