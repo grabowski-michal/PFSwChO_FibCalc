@@ -3,7 +3,7 @@ name: fib yaml file for defining DevOps GitHub Actions (using buildx, cache and 
 on:
   workflow_dispatch:
   push:
-    branches: ['master']
+    branches: ['main']
 
 env:
   REGISTRY: ghcr.io
