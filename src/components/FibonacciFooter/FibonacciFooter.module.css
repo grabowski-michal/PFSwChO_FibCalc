@@ -1,0 +1,10 @@
+.FibonacciFooter {
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    color: white;
+    text-shadow: 3px 3px 0 rgb(50, 50, 50);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:0.8em;
+}
