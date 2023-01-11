@@ -49,7 +49,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-multi-buildx
 
-      - name: Docker meta
+      - name: Docker meta.
         id: meta
         uses: docker/metadata-action@v4
         with:
