@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: ['main']
-  tags:
-    - v1.**
+    tags:
+      - 'v*'
 
 env:
   REGISTRY: ghcr.io
@@ -13,7 +13,7 @@ env:
 
 jobs:
   build-push-images-with-cache:
-    name: Build and push Docker image to Docker Hub.
+    name: Build and push Docker image to Docker Hub
     runs-on: ubuntu-20.04
     permissions:
       packages: write
